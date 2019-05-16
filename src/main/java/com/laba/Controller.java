@@ -12,15 +12,13 @@ public class Controller {
     @Value("${hello.title.suffix}")
     private String suffix;
 
-    @GetMapping({"/hello/{name}"})
+    @GetMapping("/hello/{name}")
     public String getHello(@PathVariable(required = false) String name) {
-        return prefix + " " + name + " " + suffix;
+        return prefix + name + suffix;
     }
 
-    @GetMapping({"/hello-world"})
+    @GetMapping("/hello-world")
     public String getHello() {
-        return prefix + " World " + suffix;
+        return prefix + "World" + suffix;
     }
-
-
 }

@@ -1,6 +1,6 @@
 hello:
   title:
-    prefix: Hello
+    prefix: 'Hello '
     suffix: '!'
 
 
